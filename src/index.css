@@ -1,0 +1,8 @@
+@import "./components/burger-menu/burger/burger-menu.css";
+@import "./components/swicher-chexbox/switcher/swicher-chexbox.css";
+@import "./components/game-cards/train-module/elements-train-render/elements-train-render.css";
+@import "./components/head-page/main-page/main-page.css";
+@import "./components/appearance/body/body.css";
+@import "./components/game-cards/play-module/elements-game-render/elements-game-render.css";
+@import"./components/statistics/statistic.css";
+@import "./assets/fonts/fonts.css";

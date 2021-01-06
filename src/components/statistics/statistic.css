@@ -1,0 +1,112 @@
+                            .wrapper {
+                                max-width: 1360px;
+                                margin: auto;
+                                padding: 0 40px;
+                            }
+                            
+                            .statistics {
+                                width: 100%;
+                            }
+                            
+                            .statisticsButtons {
+                                width: 100%;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: flex-end;
+                                flex-wrap: wrap;
+                                margin-top: 30px;
+                                margin-bottom: 10px;
+                            }
+                            
+                            .statistics-button {
+                                width: 240px;
+                                height: 50px;
+                                font-size: 1.4rem;
+                                font-style: normal;
+                                font-weight: normal;
+                                line-height: 1.4rem;
+                                color: #fff;
+                                margin-top: 50px;
+                                margin-left: 20px;
+                                border: none;
+                                outline: none;
+                                background-color: #FF7549;
+                                border-radius: 6px;
+                                transition: all 0.4s;
+                                box-shadow: 3px 3px 15px 2px rgba(138, 83, 0, 0.25), -3px -3px 15px 2px rgba(138, 83, 0, 0.22);
+                                cursor: pointer;
+                            }
+                            
+                            .table {
+                                width: 100%;
+                                margin-top: 30px;
+                                margin-bottom: 20px;
+                                border-collapse: collapse;
+                                color: #686461;
+                                width: 100%;
+                                box-shadow: 3px 3px 15px 2px rgba(138, 83, 0, 0.25), -3px -3px 15px 2px rgba(138, 83, 0, 0.22);
+                                word-break: break-word;
+                            }
+                            
+                            .table-name {
+                                padding: 10px;
+                                height: 34px;
+                                background: #f90;
+                                font-size: 1.6rem;
+                                font-style: normal;
+                                font-weight: bold;
+                                line-height: 1.6rem;
+                                color: #fff;
+                                text-align: center;
+                                vertical-align: middle;
+                                box-shadow: 3px 3px 15px 2px rgba(138, 83, 0, 0.25), -3px -3px 15px 2px rgba(138, 83, 0, 0.22);
+                            }
+                            
+                            thead {
+                                background: #E8E6D1;
+                            }
+                            
+                            thead th {
+                                font-family: 'Playfair Display', serif;
+                            }
+                            
+                            .table-sortable {
+                                border-bottom: 3px solid #B9B29F;
+                                padding: 8px;
+                                font-size: 1.4rem;
+                                font-style: normal;
+                                font-weight: bold;
+                                line-height: 1.4rem;
+                                text-align: center;
+                            }
+                            
+                            .table-body {
+                                background: #E8E6D1;
+                            }
+                            
+                            .table-body td {
+                                height: 36px;
+                                padding: 6px;
+                                font-size: 1.2rem;
+                                font-style: normal;
+                                font-weight: normal;
+                                line-height: 1.2em;
+                                text-align: center;
+                                vertical-align: middle;
+                                font-family: 'Playfair Display', serif;
+                            }
+                            
+                            @media only screen and (max-width: 600px) {}
+                            
+                            @media only screen and (max-width: 500px) {
+                                .statistics {
+                                    overflow: auto;
+                                    width: 250%
+                                }
+                            }
+                            
+                            @media only screen and (max-width: 300px) {
+                                .statistics {
+                                    width: 250%
+                                }
+                            }

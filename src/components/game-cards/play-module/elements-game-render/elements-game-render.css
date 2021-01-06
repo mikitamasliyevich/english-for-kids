@@ -1,0 +1,151 @@
+.section-container {
+    position: relative;
+    padding-top: 120px;
+}
+
+.pageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.flipCard {
+    border-radius: 4px;
+    width: 100%;
+    max-width: 340px;
+    transition: all .3s ease-in-out;
+    margin: 20px 25px;
+}
+
+.cardContainer {
+    perspective: 800px;
+    border-radius: 4px;
+}
+
+.fronT {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.16), 0 3px 10px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    background-color: #fff;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+img.cardImg {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+}
+
+img.picked {
+    filter: blur(5px);
+    pointer-events: none;
+    cursor: auto;
+}
+
+.flipCard:hover {
+    cursor: pointer;
+}
+
+.third {
+    border: 2px solid #f1c40f;
+    color: black;
+    -webkit-box-shadow: 0 0 40px 40px #f1c40f inset, 0 0 0 0 #f1c40f;
+    box-shadow: 0 0 40px 40px #f1c40f inset, 0 0 0 0 #f1c40f;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+.btn {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border-radius: 0.6em;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px auto;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+.repeat-word {
+    background-image: url(../../../../data/img/repeat.svg);
+    background-color: rgba(171, 216, 10, 0.664);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    color: rgba(171, 216, 10, 0.664);
+    font-size: 10px;
+    background-position: center;
+    height: 15%;
+    width: 5%;
+    text-decoration: solid;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 15px;
+}
+
+.progress-bar-container {
+    padding: 20px 20px;
+}
+
+.progress-bar .progressBarItem {
+    white-space: nowrap;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.progress-bar__item>img {
+    width: 100%;
+    height: 100%;
+}
+
+.finish {
+    width: 100%;
+    height: 90vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+}
+
+.finish>img {
+    width: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.final-result {
+    color: rgba(171, 216, 10, 0.664);
+}

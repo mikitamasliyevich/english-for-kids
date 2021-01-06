@@ -1,0 +1,113 @@
+.section__container {
+    padding-top: 120px;
+}
+
+.page-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 30px;
+    margin-bottom: 100px;
+}
+
+.card-container {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.flip-card {
+    display: flex;
+    justify-content: flex-end;
+    width: 300px;
+    height: 250px;
+    margin: 20px 25px;
+    max-width: 340px;
+    perspective: 800px;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 1s;
+}
+
+.flip-card.is-flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card__face {
+    position: absolute;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 4px;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.front {
+    transition: height 0.3s ease-in-out, box-shadow 0.3s ease-in, transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s linear;
+    transform: rotateY(0deg);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.16), 0 3px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.back {
+    transition: box-shadow 0.3s ease-in, transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: rotateY(180deg);
+}
+
+img.card-img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.card-footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+span.word {
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
+}
+
+.btn-flip {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 10px;
+    border: 0;
+    background-size: cover;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+img.flip-img {
+    width: 35px;
+    height: 40px;
+}
+
+.flip-card:hover {
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 1), 0 30px 20px rgba(0, 0, 0, 1);
+}
+
+.flip-card:hover {
+    cursor: pointer;
+}
+
+.btn-flip:hover {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.16), 0 3px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+@media all and (max-width: 720px) {
+    .flip-card {
+        width: 250px;
+        height: 220px;
+    }
+}
